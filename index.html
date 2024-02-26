@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>java-script-pro-2</title>
+</head>
+<body>
+    <div class="container">
+        <div class="music-player">
+            <nav>
+                <div class="circle"><i class="fa-solid fa-angle-left"></i></div>
+                <div class="circle"><i class="fa-solid fa-bars"></i></div>
+            </nav>
+            <img src="media/wallpaperflare.com_wallpaper (2).jpg" class="song-image">
+            <h1>Imagine Dragon</h1>
+            <p>Luis Fonsi Ft. puerto Rican</p>
+
+            <audio id="song">
+                <source src="media/Imagine_Dragons_-_Believer_(8D_AUDIO)_🎧(256k).mp3" type="audio/mpeg">
+            </audio>
+            <input type="range" value="0" id="progress">
+
+            <div class="controls">
+                <div><i class="fa-solid fa-backward"></i></div>
+                <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+                <div><i class="fa-solid fa-forward"></i></div>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

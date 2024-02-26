@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+:root {
+    --background-and-text-color: #333;
+    --main-player-background: #ffe0e5;
+    --white-color: #fff;
+    --main-color: #f53192;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    background: var(--background-and-text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.music-player {
+    background: var(--main-player-background);
+    width: 400px;
+    padding: 25px 35px;
+    text-align: center;
+    border-radius: 30px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+nav .circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--white-color);
+    color: var(--main-color);
+    line-height: 40px;
+    box-shadow: 0 5px 10px rgba(255, 26, 26, 0.22);
+}
+.song-image {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    border: 8px solid var(--white-color);
+    box-shadow: 0 10px 60px rgba(255, 26, 26, 0.22);
+}
+.music-player h1 {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--background-and-text-color);
+    margin-top: 20px;
+}
+.music-player p {
+    font-size: 14px;
+    color: var(--background-and-text-color);
+}
+#progress{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 6px;
+    background: var(--main-color);
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 40px 0;
+}
+#progress::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--main-color);
+    border: 8px solid var(--white-color);
+    box-shadow: 0 5px 5px rgba(255, 26, 26, 0.22);
+}
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.controls div {
+    width: 60px;
+    height: 60px;
+    margin: 20px;
+    background: var(--white-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--main-color);
+    box-shadow: 0 10px 20px rgba(255, 26, 26, 0.22);
+    cursor: pointer;
+}
+.controls div:nth-child(2) {
+    transform: scale(1.5);
+    background: var(--main-color);
+    color: var(--white-color);
+}
